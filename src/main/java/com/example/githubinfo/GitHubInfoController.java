@@ -18,7 +18,9 @@ class GitHubInfoController {
     private GitHubInfoController(GitHubInfoService gitHubService) {
         this.gitHubService = gitHubService;
     }
-
+    ///
+    /// End-point
+    ///
     @GetMapping("/users/{username}/repositories")
     ResponseEntity<List<Repository>> GetAllRepos(@PathVariable String username)
     {
@@ -26,7 +28,9 @@ class GitHubInfoController {
 
         return ResponseEntity.ok(repositories);
     }
-
+    ///
+    /// Handler for errors
+    ///
     @ExceptionHandler(HttpClientErrorException.NotFound.class)
     ResponseEntity<ErrorResponse> handleNotFound(HttpClientErrorException.NotFound ex) {
         ErrorResponse error = new ErrorResponse(

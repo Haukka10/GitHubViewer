@@ -17,12 +17,14 @@ record Branch(
         String name,
         String lastCommitSha
 ) {}
-
+// For error 404
 record ErrorResponse(
         int status,
         String message
 ) {}
-
+///
+/// all models for github API
+///
 record GitHubRepository(
         String name,
         Owner owner,

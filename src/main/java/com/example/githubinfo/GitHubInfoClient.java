@@ -8,7 +8,9 @@ import org.springframework.web.client.RestClient;
 
 import java.util.List;
 
-
+///
+/// Communication with public API form GitHub
+///
 @RestController
 class GitHubInfoClient {
     private final RestClient restClient;

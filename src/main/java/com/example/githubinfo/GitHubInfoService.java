@@ -14,7 +14,9 @@ public class GitHubInfoService {
     {
         this.gitHubClient = gitHubClient;
     }
-
+    ///
+    /// Getting all user repos and branches
+    ///
     public List<Repository> GetUserRepo(String UserName)
     {
         List<GitHubRepository> gitHubRepositories = gitHubClient.getUserRepos(UserName);
