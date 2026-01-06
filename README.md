@@ -19,11 +19,13 @@ Requirements
 GET /users/{username}/repositories <br>
 Returns a list of GitHub user repositories (excluding forks) with branch information.<br>
 Example Response (200 OK):
-<img width="829" height="814" alt="Screenshot 2026-01-06 012948" src="https://github.com/user-attachments/assets/0e89d55c-1b37-486d-8949-ae9aa0390602" />
+<img width="829" height="814" alt="Screenshot 2026-01-06 012948" src="https://github.com/user-attachments/assets/c26b9db6-cbf0-4654-959e-3a6d965d9ceb" />
+
 <br>
 Response for Non-Existing User (404 Not Found): <br>
 
-<img width="274" height="93" alt="Screenshot 2026-01-06 013109" src="https://github.com/user-attachments/assets/2092d8ce-1404-4ad9-829a-4370ed9ba04f" />
+<img width="274" height="93" alt="Screenshot 2026-01-06 013109" src="https://github.com/user-attachments/assets/140c0f52-9654-408c-9d23-c3aa02c6ee5d" />
+
 
 Example Usage: <br>
 ```
