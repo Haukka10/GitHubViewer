@@ -19,7 +19,7 @@ class GitHubInfoController {
         this.gitHubService = gitHubService;
     }
     ///
-    /// End-point
+    /// Handles HTTP requests and responses
     ///
     @GetMapping("/users/{username}/repositories")
     ResponseEntity<List<Repository>> GetAllRepos(@PathVariable String username)
